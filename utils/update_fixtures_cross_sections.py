@@ -302,7 +302,7 @@ def main(cross_sections_path, input_path, output_path):  # noqa: D301,D412
                 cross_sections_json_record = json.loads(cross_sections_json_content)
                 cross_sections_json_data = cross_sections_json_record[1]
 
-                if cross_sections_json_data["totX_final"] != "0.000e+00":
+                if cross_sections_json_data["total_value"] != "0.000e+00":
                     record["cross_section"] = {}
 
                     # The following lists alll the columns availalbe in the xsec json files
